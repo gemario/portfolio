@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+  --border: #8257e5;
+  --font: 'Merriweather Sans', sans-serif;
+
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--body-bg-color);
+}
+
+main {
+  padding-inline: 4rem;
+  padding-top: 4rem;
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =============== PROFILE =============== */
+
+.profile {
+  width: 34.8rem;
+  height: 27.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+
+  background-color: var(--bg-cards);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  margin-bottom: 4.7rem;
+}
+
+.profile .photo {
+  width: 12.8rem;
+  height: 12.8rem;
+  padding: 2px;
+  border-radius: 50%;
+  border: 3px solid var(--border);
+  margin-top: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.profile h1 {
+  color: var(--text-color);
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  margin-bottom: 2rem;
+}
+
+.profile p {
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+/* =============== LINKS =============== */
+
+.links {
+  width: 34.8rem;
+  height: 34.8rem;
+  background-color: var(--bg-cards);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+}
+
+.socials {
+  margin-block: 3rem;
+  margin-left: 4rem;
+  margin-right: 9.8rem;
+}
+
+.socials .content {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.socials .title {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.socials svg {
+  color: var(--border);
+  width: 24px;
+  height: 24px;
+}
+
+/* =============== TECHNOLOGIES =============== */
+
+.technologies {
+  width: 34.8rem;
+  height: 20.8rem;
+  background-color: var(--bg-cards);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  padding-block: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.title-techs {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  padding-left: 2rem;
+}
+
+.techs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  margin-left: 3rem;
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-techs);
+  border-radius: 3rem;
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  margin: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* =============== EXPERIENCIES =============== */
