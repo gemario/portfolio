@@ -54,7 +54,7 @@ a {
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border: 1px solid var(--border);
   border-radius: 2rem;
-  margin-bottom: 4.7rem;
+  margin-bottom: 3rem;
 }
 
 .profile .photo {
@@ -167,3 +167,124 @@ a {
 }
 
 /* =============== EXPERIENCIES =============== */
+
+.experiences {
+  width: 34.8rem;
+  height: 32rem;
+  background-color: var(--bg-cards);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.title-experiences {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.companies {
+  margin-left: 5.3rem;
+}
+
+.companie {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+/* =============== EDUCATION =============== */
+
+.education {
+  width: 34.8rem;
+  height: 25rem;
+  background-color: var(--bg-cards);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-education {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.schools {
+  margin-left: 5.3rem;
+}
+
+.school {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+/* =============== PROJECTS =============== */
+
+.projects {
+  margin-left: 6rem;
+}
+
+.my-projects {
+  width: 102rem;
+  height: 8.6rem;
+  background-color: var(--bg-cards);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.project-title a {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.project-description a {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+/* =============== FOOTER =============== */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  opacity: 0.6;
+  transition: opacity 400ms;
+}
+
+footer p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer:hover {
+  opacity: 1;
+}
