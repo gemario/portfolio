@@ -250,6 +250,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
+  margin-bottom: 3rem;
 }
 
 .project-title a {
@@ -266,6 +267,144 @@ a {
   line-height: 1.8rem;
 }
 
+.main-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.main-projects .circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #e7de79;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+}
+
+.project-one,
+.project-second,
+.project-third,
+.project-fourth {
+  display: flex;
+  flex-direction: column;
+  padding-block: 3rem;
+  padding-left: 3rem;
+  width: 49.5rem;
+  height: 18.6rem;
+  background-color: var(--bg-cards);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+}
+
+.header-one,
+.header-second,
+.header-third,
+.header-fourth {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.header-one svg,
+.header-second svg,
+.header-third svg,
+.header-fourth svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--border);
+}
+
+.header-one a,
+.header-second a,
+.header-third a,
+.header-fourth a {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.content-project-one,
+.content-project-second,
+.content-project-third,
+.content-project-fourth {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.references-one,
+.references-second,
+.references-third,
+.references-fourth {
+  display: flex;
+  align-items: center;
+  gap: 18rem;
+}
+
+.stars-branch-one,
+.stars-branch-second,
+.stars-branch-third,
+.stars-branch-fourth {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.stars-branch-one svg,
+.stars-branch-second svg,
+.stars-branch-third svg,
+.stars-branch-fourth svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--border);
+}
+
+.stars-branch-one p,
+.stars-branch-second p,
+.stars-branch-third p,
+.stars-branch-fourth p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-right: 0.8rem;
+}
+
+.one-language-used,
+.second-language-used,
+.third-language-used,
+.fourth-language-used {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.one-language-used .circle {
+  background: #e34c26;
+}
+
+.third-language-used .circle {
+  background: #3178c6;
+}
+
+.fourth-language-used .circle {
+  background: #563d7c;
+}
+
+.one-language-used p,
+.second-language-used p,
+.third-language-used p,
+.fourth-language-used p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
 /* =============== FOOTER =============== */
 
 footer {
