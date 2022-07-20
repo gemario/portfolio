@@ -15,9 +15,14 @@
   font-size: 62.5%; /* 1rem = 10px */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font);
   background-color: var(--body-bg-color);
+  overflow: overlay;
 }
 
 main {
@@ -132,6 +137,12 @@ a {
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.6rem;
+
+  transition: 0.4s;
+}
+
+.title:hover {
+  color: #fff;
 }
 
 .socials svg {
@@ -237,7 +248,7 @@ a {
 
 .education {
   width: 34.8rem;
-  height: 25rem;
+  height: 18rem;
   background-color: var(--bg-cards);
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border: 1px solid var(--border);
@@ -309,6 +320,12 @@ a {
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.5rem;
+
+  transition: 0.3s;
+}
+
+.project-title a:hover {
+  color: #fff;
 }
 
 .project-description a {
@@ -316,6 +333,12 @@ a {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.8rem;
+
+  transition: 0.3s;
+}
+
+.project-description a:hover {
+  color: #fff;
 }
 
 .main-projects {
@@ -356,6 +379,20 @@ a {
 .project-third:hover,
 .project-fourth:hover {
   transform: scale(1.1);
+}
+
+.title-project-one,
+.title-project-second,
+.title-project-third,
+.title-project-fourth {
+  transition: 0.3s;
+}
+
+.title-project-one:hover,
+.title-project-second:hover,
+.title-project-third:hover,
+.title-project-fourth:hover {
+  color: #fff;
 }
 
 .header-one,
@@ -557,6 +594,13 @@ a {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.7rem;
+
+  transition: 0.3s;
+}
+
+.primarytext-post-one a:hover,
+.primarytext-post-two a:hover {
+  color: #fff;
 }
 
 .primarytext-post-one p,
@@ -573,6 +617,13 @@ a {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2rem;
+
+  transition: 0.3s;
+}
+
+.subtext-post-one a:hover,
+.subtext-post-two a:hover {
+  color: #fff;
 }
 
 .subtext-post-one h4,
