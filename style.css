@@ -347,18 +347,7 @@ a {
   gap: 3.5rem;
 }
 
-.main-projects .circle {
-  width: 1.5rem;
-  height: 1.5rem;
-  background: #e7de79;
-  border: 2px solid var(--text-color);
-  border-radius: 50%;
-}
-
-.project-one,
-.project-second,
-.project-third,
-.project-fourth {
+.project-cards {
   display: flex;
   flex-direction: column;
   padding-block: 3rem;
@@ -374,60 +363,39 @@ a {
   transition: 0.5s;
 }
 
-.project-one:hover,
-.project-second:hover,
-.project-third:hover,
-.project-fourth:hover {
+.project-cards:hover {
   transform: scale(1.1);
 }
 
-.title-project-one,
-.title-project-second,
-.title-project-third,
-.title-project-fourth {
+.title-project-cards {
   transition: 0.3s;
 }
 
-.title-project-one:hover,
-.title-project-second:hover,
-.title-project-third:hover,
-.title-project-fourth:hover {
+.title-project-cards:hover {
   color: #fff;
 }
 
-.header-one,
-.header-second,
-.header-third,
-.header-fourth {
+.header-cards {
   display: flex;
   align-items: center;
   gap: 1.8rem;
   margin-bottom: 2rem;
 }
 
-.header-one svg,
-.header-second svg,
-.header-third svg,
-.header-fourth svg {
+.header-cards svg {
   width: 2rem;
   height: 2rem;
   color: var(--border);
 }
 
-.header-one a,
-.header-second a,
-.header-third a,
-.header-fourth a {
+.header-cards a {
   color: var(--text-color);
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2rem;
 }
 
-.content-project-one,
-.content-project-second,
-.content-project-third,
-.content-project-fourth {
+.content-project-cards {
   color: var(--text-color);
   font-weight: 400;
   font-size: 1.4rem;
@@ -435,37 +403,25 @@ a {
   margin-bottom: 2rem;
 }
 
-.references-one,
-.references-second,
-.references-third,
-.references-fourth {
+.references-cards {
   display: flex;
   align-items: center;
   gap: 18rem;
 }
 
-.stars-branch-one,
-.stars-branch-second,
-.stars-branch-third,
-.stars-branch-fourth {
+.stars-branch {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
 
-.stars-branch-one svg,
-.stars-branch-second svg,
-.stars-branch-third svg,
-.stars-branch-fourth svg {
+.stars-branch svg {
   width: 2rem;
   height: 2rem;
   color: var(--border);
 }
 
-.stars-branch-one p,
-.stars-branch-second p,
-.stars-branch-third p,
-.stars-branch-fourth p {
+.stars-branch p {
   color: var(--text-color);
   font-weight: 400;
   font-size: 1.4rem;
@@ -473,31 +429,45 @@ a {
   margin-right: 0.8rem;
 }
 
-.one-language-used,
-.second-language-used,
-.third-language-used,
-.fourth-language-used {
+.language-used {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
 
-.one-language-used .circle {
+.language-used .circle-one {
+  width: 1.5rem;
+  height: 1.5rem;
   background: #e34c26;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
 }
 
-.third-language-used .circle {
+.language-used .circle-two {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #f1e05a;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+}
+
+.language-used .circle-three {
+  width: 1.5rem;
+  height: 1.5rem;
   background: #3178c6;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
 }
 
-.fourth-language-used .circle {
+.language-used .circle-four {
+  width: 1.5rem;
+  height: 1.5rem;
   background: #563d7c;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
 }
 
-.one-language-used p,
-.second-language-used p,
-.third-language-used p,
-.fourth-language-used p {
+.language-used .language-card {
   color: var(--text-color);
   font-weight: 400;
   font-size: 1.4rem;
@@ -545,8 +515,7 @@ a {
   gap: 3rem;
 }
 
-.post-one,
-.post-two {
+.post-card {
   width: 102rem;
   height: 20.1rem;
   display: flex;
@@ -560,13 +529,11 @@ a {
   transition: 0.5s;
 }
 
-.post-one:hover,
-.post-two:hover {
+.post-card:hover {
   transform: scale(1.1);
 }
 
-.content-post-one,
-.content-post-two {
+.content-post-card {
   display: flex;
   align-items: center;
   margin-block: 3rem;
@@ -574,22 +541,19 @@ a {
   gap: 2rem;
 }
 
-.content-post-one img,
-.content-post-two img {
+.content-post-card img {
   width: 12.8rem;
   height: 12.8rem;
   border-radius: 50%;
 }
 
-.text-post-one,
-.text-post-two {
+.text-post {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
 
-.primarytext-post-one a,
-.primarytext-post-two a {
+.primarytext-post a {
   color: var(--text-color);
   font-weight: 700;
   font-size: 1.8rem;
@@ -598,21 +562,18 @@ a {
   transition: 0.3s;
 }
 
-.primarytext-post-one a:hover,
-.primarytext-post-two a:hover {
+.primarytext-post a:hover {
   color: #fff;
 }
 
-.primarytext-post-one p,
-.primarytext-post-two p {
+.primarytext-post p {
   color: var(--text-color);
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.8rem;
 }
 
-.subtext-post-one a,
-.subtext-post-two a {
+.subtext-post a {
   color: var(--text-color);
   font-weight: 400;
   font-size: 1.6rem;
@@ -621,13 +582,11 @@ a {
   transition: 0.3s;
 }
 
-.subtext-post-one a:hover,
-.subtext-post-two a:hover {
+.subtext-post a:hover {
   color: #fff;
 }
 
-.subtext-post-one h4,
-.subtext-post-two h4 {
+.subtext-post h4 {
   margin-bottom: 1rem;
 }
 
