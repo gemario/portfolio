@@ -37,6 +37,7 @@ body {
   padding-top: 4rem;
   display: flex;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 img {
