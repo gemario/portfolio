@@ -33,10 +33,9 @@ body {
 
 .container {
   max-width: 1500px;
-  padding-inline: 4rem;
+  padding-inline: 5rem;
   padding-top: 4rem;
   display: flex;
-  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -66,8 +65,6 @@ a {
 /* =============== PROFILE =============== */
 
 .profile {
-  width: 100%;
-  max-width: 34.8rem;
   height: 27.5rem;
   flex-direction: column;
   justify-content: center;
@@ -118,8 +115,6 @@ a {
 /* =============== LINKS =============== */
 
 .links {
-  width: 100%;
-  max-width: 34.8rem;
   height: 34.8rem;
   background-color: var(--bg-cards);
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
@@ -136,6 +131,7 @@ a {
 }
 
 .socials {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -175,8 +171,6 @@ a {
 /* =============== TECHNOLOGIES =============== */
 
 .technologies {
-  width: 100%;
-  max-width: 34.8rem;
   height: 20.8rem;
   background-color: var(--bg-cards);
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
@@ -218,7 +212,6 @@ a {
   text-transform: uppercase;
 
   width: 100%;
-  max-width: 8.6rem;
   height: 2.4rem;
 }
 
@@ -226,7 +219,6 @@ a {
 
 .experiences {
   width: 100%;
-  max-width: 34.8rem;
   height: 32rem;
   background-color: var(--bg-cards);
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
@@ -258,7 +250,6 @@ a {
 
 .education {
   width: 100%;
-  max-width: 34.8rem;
   height: 18rem;
   background-color: var(--bg-cards);
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
@@ -290,6 +281,8 @@ a {
 
 .content {
   margin-left: 6rem;
+  margin-bottom: 3rem;
+  width: 100%;
 }
 
 .projects {
@@ -297,8 +290,6 @@ a {
 }
 
 .my-projects {
-  width: 100%;
-  max-width: 95.2rem;
   height: 8.6rem;
   background-color: var(--bg-cards);
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
@@ -351,8 +342,6 @@ a {
 }
 
 .project-cards {
-  width: 100%;
-  max-width: 46.1rem;
   height: 18.6rem;
   display: flex;
   flex-direction: column;
@@ -484,6 +473,7 @@ a {
 /* =============== POSTS =============== */
 
 .content-posts {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -491,7 +481,6 @@ a {
 
 .recent-post {
   width: 100%;
-  max-width: 95.2rem;
   height: 8.6rem;
   background-color: var(--bg-cards);
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
@@ -525,7 +514,6 @@ a {
 
 .post-card {
   width: 100%;
-  max-width: 95.2rem;
   height: 20.1rem;
   display: flex;
   background-color: var(--bg-cards);
@@ -545,8 +533,7 @@ a {
 .content-post-card {
   display: flex;
   align-items: center;
-  margin-block: 3rem;
-  margin-left: 3rem;
+  margin: 3rem;
   gap: 2rem;
 }
 
@@ -560,7 +547,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  margin-right: 2rem;
 }
 
 .primarytext-post a {
@@ -636,43 +622,38 @@ footer:hover {
   opacity: 1;
 }
 
-@media (max-width: 1440px) {
-  .my-projects {
-    width: 100%;
-    max-width: 51rem;
-    height: 8.6rem;
-  }
-
+@media (max-width: 1420px) {
   .main-projects {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
+}
 
-  .project-cards {
-    width: 100%;
-    max-width: 51rem;
-  }
-
-  .recent-post {
-    width: 100%;
-    max-width: 51rem;
-    height: 8.6rem;
-  }
-
+@media (max-width: 1080px) {
   .post-card {
-    width: 100%;
-    max-width: 51rem;
-    height: 30.6rem;
+    height: 37.5rem;
+  }
+
+  .content-post-card {
+    flex-direction: column;
   }
 
   .text-post {
-    width: 30rem;
+    align-items: center;
+  }
+
+  .primarytext-post p {
+    text-align: center;
+  }
+
+  .subtext-post a {
+    text-align: center;
   }
 
   .hashtags {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-top: 2.5rem;
   }
 }
