@@ -670,6 +670,10 @@ footer:hover {
 }
 
 @media (max-width: 450px) {
+  .container {
+    padding-inline: 4rem;
+  }
+
   .profile .photo {
     width: 9rem;
     height: 9rem;
@@ -688,7 +692,7 @@ footer:hover {
   }
 
   .project-description a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .titles-cards-sidebar {
@@ -696,7 +700,7 @@ footer:hover {
   }
 
   .content-project-cards {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .recent-post-title {
